@@ -27,7 +27,7 @@ public class TestAsync {
 		keys.add("MultiTasks");
 		try {
 			// 【事件监听】对事件结果进行监听
-			utils.await();
+			utils.listen();
 			System.out.println("===============以下为查询结果=================");
 			List<ListenableFuture<SearchResult>> res = utils.search(keys);
 			for(ListenableFuture<SearchResult> lf : res){

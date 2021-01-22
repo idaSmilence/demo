@@ -95,7 +95,7 @@ public class AsyncUtils {
 
 	// 当已完成任务达到countLatch的容量时触发
 	// 可做为任务完成时的回调
-	public void await() throws InterruptedException {
+	public void listen() throws InterruptedException {
 		countDownLatch.await();
 	}
 	//统计已完成的任务数
